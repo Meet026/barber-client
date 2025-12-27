@@ -3,11 +3,11 @@ export default function BookingSection() {
     <section id="booking" className="bg-[#F6F1E6] py-12 sm:py-20 lg:py-24">
       <div className="max-w-[850px] mx-auto text-center px-4 sm:px-6">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#1B1B1B]">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#1B1B1B]">
           Ready for Your Best Look?
         </h2>
 
-        <p className="text-gray-700 mt-2 text-sm sm:text-base">
+        <p className="text-gray-700 mt-2 text-xs sm:text-sm">
           Book your appointment in under 60 seconds
         </p>
 
@@ -17,46 +17,46 @@ export default function BookingSection() {
             {/* Row 1 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
               <div>
-                <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+                <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                   Full Name *
                 </label>
                 <input
                   type="text"
                   placeholder="Enter your full name"
-                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base"
+                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+                <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                   Phone Number *
                 </label>
                 <input
                   type="tel"
                   placeholder="(555) 123-4567"
-                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base"
+                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm"
                 />
               </div>
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+              <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                 Email Address *
               </label>
               <input
                 type="email"
                 placeholder="your.email@example.com"
-                className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base"
+                className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm"
               />
             </div>
 
             {/* Service Selector */}
             <div>
-              <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+              <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                 Select Service *
               </label>
-              <select className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base">
+              <select className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm">
                 <option>Choose a service</option>
                 <option>Haircut</option>
                 <option>Beard Trim</option>
@@ -67,20 +67,20 @@ export default function BookingSection() {
             {/* Date + Time */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
               <div>
-                <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+                <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                   Preferred Date *
                 </label>
                 <input
                   type="date"
-                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base"
+                  className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+                <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                   Preferred Time *
                 </label>
-                <select className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base">
+                <select className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm">
                   <option>Select time</option>
                   <option>10:00 AM</option>
                   <option>12:00 PM</option>
@@ -91,13 +91,13 @@ export default function BookingSection() {
 
             {/* Notes */}
             <div>
-              <label className="block text-xs sm:text-sm font-semibold text-gray-600 text-left">
+              <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                 Additional Notes (Optional)
               </label>
               <textarea
                 rows={4}
                 placeholder="Any specific requests or preferences..."
-                className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-sm sm:text-base resize-none"
+                className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm resize-none"
               />
 
               <p className="text-xs text-gray-500 mt-1 text-left">
@@ -108,7 +108,7 @@ export default function BookingSection() {
             {/* Submit Button */}
             <button
               type="button"
-              className="w-full bg-[#E6B31E] hover:opacity-90 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg text-black transition-opacity"
+              className="w-full bg-[#E6B31E] hover:opacity-90 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base text-black transition-opacity"
             >
               Book Appointment Now
             </button>

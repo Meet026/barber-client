@@ -6,34 +6,34 @@ export default function OurStory() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 px-4 sm:px-6 items-center">
         {/* LEFT TEXT */}
         <div className="text-white">
-          <p className="text-[#E6B31E] tracking-[2px] sm:tracking-[3px] text-xs sm:text-sm mb-3 sm:mb-4">
+          <p className="text-[#E6B31E] tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-xs mb-3 sm:mb-4">
             OUR STORY
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug mb-6 sm:mb-8">
             Craftsmanship Meets Community
           </h2>
 
-          <p className="text-gray-300 leading-relaxed mb-4 sm:mb-5 text-base sm:text-lg">
+          <p className="text-gray-300 leading-relaxed mb-4 sm:mb-5 text-sm sm:text-base">
             Founded with a passion for the timeless art of barbering, Elite
             Barber Studio represents more than just a place to get a haircut.
             We're a destination where traditional craftsmanship meets modern
             style.
           </p>
 
-          <p className="text-gray-300 leading-relaxed mb-4 sm:mb-5 text-base sm:text-lg">
+          <p className="text-gray-300 leading-relaxed mb-4 sm:mb-5 text-sm sm:text-base">
             Our master barbers bring decades of experience. Every service
             reflects precision, creativity and true dedication to the craft.
           </p>
 
-          <p className="text-gray-300 leading-relaxed mb-5 sm:mb-7 text-base sm:text-lg">
+          <p className="text-gray-300 leading-relaxed mb-5 sm:mb-7 text-sm sm:text-base">
             Every client becomes part of our community. We learn your style,
             your lifestyle, and deliver results that simply feel right.
           </p>
 
           <div className="flex items-start gap-2 sm:gap-3 mt-3 sm:mt-4">
             <div className="w-[2px] sm:w-[3px] h-7 sm:h-9 bg-[#E6B31E] flex-shrink-0" />
-            <p className="italic text-[#E6B31E] text-base sm:text-lg lg:text-xl">
+            <p className="italic text-[#E6B31E] text-sm sm:text-base lg:text-lg">
               "Every cut tells a story"
             </p>
           </div>

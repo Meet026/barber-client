@@ -22,7 +22,7 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
         <h2
-          className={`text-lg sm:text-xl lg:text-2xl font-bold tracking-wide transition-colors duration-300
+          className={`text-base sm:text-lg lg:text-xl font-bold tracking-wide transition-colors duration-300
               ${scrolled ? "text-black" : "text-white"}
             `}
         >
@@ -31,7 +31,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div
-          className={`hidden md:flex gap-6 lg:gap-10 text-base lg:text-lg transition-colors duration-300
+          className={`hidden md:flex gap-6 lg:gap-10 text-sm lg:text-base transition-colors duration-300
               ${scrolled ? "text-black" : "text-white"}
             `}
         >
@@ -73,7 +73,7 @@ export default function Navbar() {
           </span>
         </div>
 
-        <button className="hidden md:block bg-[#E6B31E] text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-sm lg:text-base hover:opacity-90 transition-opacity">
+        <button className="hidden md:block bg-[#E6B31E] text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-xs lg:text-sm hover:opacity-90 transition-opacity">
           Book Now
         </button>
 

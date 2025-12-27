@@ -14,20 +14,20 @@ export default function MainHero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
           Premium Men's <br /> Grooming Experience
         </h1>
 
-        <p className="text-[#EDE6D9] text-sm sm:text-base lg:text-lg mt-4 max-w-2xl">
+        <p className="text-[#EDE6D9] text-xs sm:text-sm lg:text-base mt-4 max-w-2xl">
           Expert cuts. Precision fades. Unmatched attention to detail.
         </p>
 
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto px-4 sm:px-0">
-          <button className="bg-[#E6B31E] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-lg hover:scale-105 transition">
+        <div className="mt-8 flex gap-3 sm:gap-6">
+          <button className="bg-[#E6B31E] text-black px-4 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-xs sm:text-base shadow-lg hover:scale-105 transition">
             Book Appointment
           </button>
 
-          <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-black transition">
+          <button className="border-2 border-white text-white px-4 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-xs sm:text-base hover:bg-white hover:text-black transition">
             View Our Work
           </button>
         </div>

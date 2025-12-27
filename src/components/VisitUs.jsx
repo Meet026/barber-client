@@ -101,12 +101,12 @@ export default function VisitUs() {
       {/* CONTENT */}
       <div className="py-12 sm:py-16 md:py-20 lg:py-24 relative z-10">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-center mb-12 sm:mb-16 lg:mb-20 px-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-center mb-10 sm:mb-12 lg:mb-16 px-4">
           Visit Us
         </h2>
 
         {/* INFO ROW */}
-        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 lg:gap-20 text-center mb-12 sm:mb-16 lg:mb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 lg:gap-16 text-center mb-12 sm:mb-16 lg:mb-20 px-4 sm:px-6 lg:px-8">
           <InfoBlock
             title="Location"
             lines={["Nikol, Ahmedabad", "Gujarat, India"]}
@@ -116,18 +116,18 @@ export default function VisitUs() {
           <InfoBlock
             title="Hours"
             custom={
-              <div className="space-y-2 sm:space-y-3">
-                <div className="flex flex-col sm:flex-row justify-between sm:w-64 mx-auto gap-1 sm:gap-0">
-                  <span className="text-sm sm:text-base">Monday – Friday</span>
-                  <span className="text-[#D4AF37] text-sm sm:text-base">
+              <div className="space-y-1.5 sm:space-y-2">
+                <div className="flex flex-col sm:flex-row justify-between sm:w-64 mx-auto gap-0.5 sm:gap-0">
+                  <span className="text-sm">Monday – Friday</span>
+                  <span className="text-gold text-sm font-semibold">
                     9AM – 8PM
                   </span>
                 </div>
-                <div className="flex flex-col sm:flex-row justify-between sm:w-64 mx-auto gap-1 sm:gap-0">
-                  <span className="text-sm sm:text-base">
+                <div className="flex flex-col sm:flex-row justify-between sm:w-64 mx-auto gap-0.5 sm:gap-0">
+                  <span className="text-sm">
                     Saturday – Sunday
                   </span>
-                  <span className="text-[#D4AF37] text-sm sm:text-base">
+                  <span className="text-gold text-sm font-semibold">
                     10AM – 6PM
                   </span>
                 </div>
@@ -141,8 +141,6 @@ export default function VisitUs() {
           />
         </div>
 
-        {/* MAP */}
-        {/* MAP */}
         {/* MAP */}
         <div className="flex justify-center relative z-20 px-4 sm:px-6">
           <div
@@ -182,16 +180,19 @@ export default function VisitUs() {
 function InfoBlock({ title, lines, footer, custom }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#D4AF37] mb-4 sm:mb-5 transition-all" />
+      <div className="w-12 h-12 rounded-full bg-gold mb-4 sm:mb-5 transition-all text-dark flex items-center justify-center font-bold text-lg font-serif">
+         {/* Icon Placeholder or Initial */}
+         {title[0]}
+      </div>
 
-      <h3 className="font-semibold mb-2 sm:mb-3 text-base sm:text-lg">
+      <h3 className="font-bold font-serif mb-2 sm:mb-3 text-sm sm:text-base">
         {title}
       </h3>
 
       {custom ? (
-        <div className="text-sm sm:text-base text-gray-700">{custom}</div>
+        <div className="text-sm text-gray-700">{custom}</div>
       ) : (
-        <div className="text-sm sm:text-base text-gray-700 space-y-1">
+        <div className="text-sm text-gray-700 space-y-0.5">
           {lines?.map((line, i) => (
             <p key={i} className="break-words px-2 sm:px-0">
               {line}
@@ -201,7 +202,7 @@ function InfoBlock({ title, lines, footer, custom }) {
       )}
 
       {footer && (
-        <p className="text-[#D4AF37] text-xs sm:text-sm mt-2 sm:mt-3">
+        <p className="text-gold text-xs font-semibold mt-2 sm:mt-3">
           {footer}
         </p>
       )}

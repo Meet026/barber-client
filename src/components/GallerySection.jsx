@@ -27,10 +27,10 @@ export default function GallerySection() {
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-10 sm:mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-white mb-3 sm:mb-4">
             Our Work Speaks
           </h2>
-          <p className="text-[#E6B31E] text-sm sm:text-base">
+          <p className="text-[#E6B31E] text-xs sm:text-sm">
             Real cuts. Real clients. Real results.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function GallerySection() {
         <div className="text-center mt-12 sm:mt-20 lg:mt-24">
           <button
             onClick={() => navigate("/gallery")}
-            className="px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded-full border border-[#E6B31E] text-[#E6B31E] text-sm sm:text-base hover:bg-[#E6B31E] hover:text-black transition"
+            className="px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 rounded-full border border-[#E6B31E] text-[#E6B31E] text-xs sm:text-sm hover:bg-[#E6B31E] hover:text-black transition"
           >
             View More Work
           </button>
