@@ -1,4 +1,4 @@
-export default function ServicesSection() {
+export default function ServicesSection({ onBook }) {
   return (
     <section
       id="services"
@@ -32,6 +32,7 @@ export default function ServicesSection() {
               "Precision cut with hot towel finish",
               "Complimentary beard trim",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 2 */}
@@ -43,6 +44,7 @@ export default function ServicesSection() {
               "Hot towel treatment",
               "Beard oil application",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 3 */}
@@ -54,6 +56,7 @@ export default function ServicesSection() {
               "Detailed line work",
               "Styling with premium products",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 4 */}
@@ -65,6 +68,7 @@ export default function ServicesSection() {
               "Hot towel shave",
               "Eyebrow trimming & styling",
             ]}
+            onBook={onBook}
           />
         </div>
       </div>
@@ -72,7 +76,7 @@ export default function ServicesSection() {
   );
 }
 
-function ServiceCard({ title, price, features }) {
+function ServiceCard({ title, price, features, onBook }) {
   return (
     <div className="bg-white rounded-2xl p-6 sm:p-8 w-full max-w-[320px] mx-auto sm:mx-0 shadow-lg">
       <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-[#111]">
@@ -90,7 +94,10 @@ function ServiceCard({ title, price, features }) {
           {price}
         </span>
 
-        <button className="text-sm underline text-[#111] hover:text-[#E6B31E] transition">
+        <button
+          onClick={() => onBook(title)}
+          className="text-sm underline text-[#111] hover:text-[#E6B31E] transition"
+        >
           Book This
         </button>
       </div>

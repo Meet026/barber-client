@@ -1,4 +1,13 @@
-export default function BookingSection() {
+import { useEffect, useState } from "react";
+
+export default function BookingSection({ selectedService }) {
+  const [service, setService] = useState("");
+
+  useEffect(() => {
+    if (selectedService) {
+      setService(selectedService);
+    }
+  }, [selectedService]);
   return (
     <section id="booking" className="bg-[#F6F1E6] py-12 sm:py-20 lg:py-24">
       <div className="max-w-[850px] mx-auto text-center px-4 sm:px-6">
@@ -56,11 +65,16 @@ export default function BookingSection() {
               <label className="block text-[10px] sm:text-xs font-semibold text-gray-600 text-left">
                 Select Service *
               </label>
-              <select className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm">
+              <select
+                value={service}
+                onChange={(e) => setService(e.target.value)}
+                className="mt-2 w-full border border-gray-300 rounded-md px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:ring-2 focus:ring-[#E6B31E] text-xs sm:text-sm"
+              >
                 <option>Choose a service</option>
-                <option>Haircut</option>
-                <option>Beard Trim</option>
-                <option>Deluxe Package</option>
+                <option>Signature Haircut</option>
+                <option>Beard Sculpting</option>
+                <option>Premium Fade</option>
+                <option>Full Grooming Package</option>
               </select>
             </div>
 
