@@ -1,25 +1,54 @@
 import { useNavigate } from "react-router-dom";
-import photo1 from "../assets/Photo-1.jpg";
-import photo2 from "../assets/Photo-2.jpg";
-import photo3 from "../assets/Photo-3.jpg";
-import photo4 from "../assets/Photo-4.jpg";
-import photo5 from "../assets/Photo-5.jpg";
 
 export default function GallerySection() {
   const navigate = useNavigate();
 
   // All gallery items
   const allGalleryItems = [
-    <GalleryImg key="g1" src={photo1} />,
-    <GalleryImg key="g2" src={photo4} />,
-    <BeforeAfter key="ba1" before={photo2} after={photo3} />,
-    <GalleryImg key="g3" src={photo2} />,
-    <GalleryImg key="g4" src={photo5} highlight />,
-    <GalleryImg key="g5" src={photo1} />,
-    <GalleryImg key="g6" src={photo3} />,
-    <BeforeAfter key="ba2" before={photo5} after={photo3} />,
-    <GalleryImg key="g7" src={photo1} />,
-    <GalleryImg key="g8" src={photo5} highlight />,
+    <GalleryImg
+      key="g1"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287065/Photo-1_i3rspr.jpg"
+    />,
+    <GalleryImg
+      key="g2"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287218/Photo-4_nlkimv.jpg"
+    />,
+    <BeforeAfter
+      key="ba1"
+      before="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287117/Photo-2_mh1hys.jpg"
+      after="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287162/Photo-3_paz9ek.jpg"
+    />,
+    <GalleryImg
+      key="g3"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287117/Photo-2_mh1hys.jpg"
+    />,
+    <GalleryImg
+      key="g4"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287275/Photo-5_va5h2n.jpg"
+      highlight
+    />,
+    <GalleryImg
+      key="g5"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287065/Photo-1_i3rspr.jpg"
+    />,
+    <GalleryImg
+      key="g6"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287162/Photo-3_paz9ek.jpg"
+    />,
+    <BeforeAfter
+      key="ba2"
+      before="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287218/Photo-4_nlkimv.jpg"
+      after="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287162/Photo-3_paz9ek.jpg"
+    />,
+    <GalleryImg
+      key="g7"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287065/Photo-1_i3rspr.jpg"
+    />,
+    <GalleryImg
+      key="g8"
+      src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287275/Photo-5_va5h2n.jpg"
+      highlight
+    />,
   ];
 
   return (
