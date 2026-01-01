@@ -1,4 +1,4 @@
-export default function ServicesSection() {
+export default function ServicesSection({ onBook }) {
   return (
     <section
       id="services"
@@ -7,13 +7,13 @@ export default function ServicesSection() {
       {/* LEFT PANEL */}
       <div className="w-full lg:w-1/2 bg-[#F6F2E9] flex items-center py-12 sm:py-16 lg:py-0">
         <div className="px-6 sm:px-12 lg:px-16 xl:px-24 w-full">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#1C1C1C] mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-[#1C1C1C] mb-4 sm:mb-6">
             Our Services
           </h2>
 
           <div className="w-12 sm:w-16 h-[2px] bg-[#E6B31E] mb-6 sm:mb-8"></div>
 
-          <p className="text-[#555] text-base sm:text-lg leading-relaxed max-w-md">
+          <p className="text-[#555] text-sm sm:text-base leading-relaxed max-w-md">
             Tailored grooming for the modern gentleman. Each service is crafted
             with precision and care.
           </p>
@@ -32,6 +32,7 @@ export default function ServicesSection() {
               "Precision cut with hot towel finish",
               "Complimentary beard trim",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 2 */}
@@ -43,6 +44,7 @@ export default function ServicesSection() {
               "Hot towel treatment",
               "Beard oil application",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 3 */}
@@ -54,6 +56,7 @@ export default function ServicesSection() {
               "Detailed line work",
               "Styling with premium products",
             ]}
+            onBook={onBook}
           />
 
           {/* CARD 4 */}
@@ -65,6 +68,7 @@ export default function ServicesSection() {
               "Hot towel shave",
               "Eyebrow trimming & styling",
             ]}
+            onBook={onBook}
           />
         </div>
       </div>
@@ -72,10 +76,10 @@ export default function ServicesSection() {
   );
 }
 
-function ServiceCard({ title, price, features }) {
+function ServiceCard({ title, price, features, onBook }) {
   return (
     <div className="bg-white rounded-2xl p-6 sm:p-8 w-full max-w-[320px] mx-auto sm:mx-0 shadow-lg">
-      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-[#111]">
+      <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-[#111]">
         {title}
       </h3>
 
@@ -86,11 +90,14 @@ function ServiceCard({ title, price, features }) {
       </ul>
 
       <div className="flex items-center justify-between">
-        <span className="text-xl sm:text-2xl font-bold text-[#E6B31E]">
+        <span className="text-lg sm:text-xl font-bold text-[#E6B31E]">
           {price}
         </span>
 
-        <button className="text-sm underline text-[#111] hover:text-[#E6B31E] transition">
+        <button
+          onClick={() => onBook(title)}
+          className="text-sm underline text-[#111] hover:text-[#E6B31E] transition"
+        >
           Book This
         </button>
       </div>

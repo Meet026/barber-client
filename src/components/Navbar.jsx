@@ -17,13 +17,12 @@ export default function Navbar() {
   return (
     <div
       className={`fixed top-0 left-0 w-full transition-all duration-1000 z-[999]
-          ${scrolled ? "bg-stone-100 shadow-lg" : "bg-transparent"}
+          ${scrolled ? "bg-[#1B1B1B] shadow-lg" : "bg-transparent"}
         `}
     >
       <div className="flex justify-between items-center px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
         <h2
-          className={`text-lg sm:text-xl lg:text-2xl font-bold tracking-wide transition-colors duration-300
-              ${scrolled ? "text-black" : "text-white"}
+          className={`text-base sm:text-lg lg:text-xl font-bold tracking-wide transition-colors duration-300 text-white
             `}
         >
           BARBER STUDIO
@@ -31,8 +30,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div
-          className={`hidden md:flex gap-6 lg:gap-10 text-base lg:text-lg transition-colors duration-300
-              ${scrolled ? "text-black" : "text-white"}
+          className={`hidden md:flex gap-6 lg:gap-10 text-sm lg:text-base transition-colors duration-300 text-white
             `}
         >
           <span
@@ -73,16 +71,14 @@ export default function Navbar() {
           </span>
         </div>
 
-        <button className="hidden md:block bg-[#E6B31E] text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-sm lg:text-base hover:opacity-90 transition-opacity">
+        <button className="hidden md:block bg-[#E6B31E] text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-xs lg:text-sm hover:opacity-90 transition-opacity">
           Book Now
         </button>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`md:hidden transition-colors duration-300 ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className="md:hidden transition-colors duration-300 text-white"
         >
           {menuOpen ? (
             <svg
@@ -118,8 +114,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-stone-100 border-t border-gray-200">
-          <div className="flex flex-col items-center gap-4 py-6 text-black">
+        <div className="md:hidden bg-[#1B1B1B] border-t border-[#2A2A2A]">
+          <div className="flex flex-col items-center gap-4 py-6 text-white">
             <span className="cursor-pointer hover:opacity-70 text-lg">
               Services
             </span>
