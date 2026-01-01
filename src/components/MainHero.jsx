@@ -1,10 +1,9 @@
-import backgroundImage from "../assets/barber.jpg";
 export default function MainHero() {
   return (
     <div className="relative h-screen w-full">
       {/* Background Image */}
       <img
-        src={backgroundImage}
+        src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767286874/barber_ey8hyw.jpg"
         className="absolute inset-0 w-full h-full object-cover"
         alt="Barbershop"
       />

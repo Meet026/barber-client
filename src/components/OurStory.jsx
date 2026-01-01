@@ -1,5 +1,3 @@
-import storyPhoto from "../assets/barber-scissor.jpg";
-
 export default function OurStory() {
   return (
     <section className="w-full bg-[#111111] py-16 sm:py-24 lg:py-36">
@@ -44,7 +42,7 @@ export default function OurStory() {
           {/* GOLD BORDER IMAGE */}
           <div className="border-[3px] sm:border-[4px] lg:border-[5px] border-[#E6B31E] rounded-lg sm:rounded-xl overflow-hidden w-full max-w-[380px] sm:max-w-[420px] lg:max-w-[480px] aspect-[3/4]">
             <img
-              src={storyPhoto}
+              src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287386/barber-scissor_ldsm7z.jpg"
               className="w-full h-full object-cover grayscale"
               alt="Barber craftsmanship"
             />
