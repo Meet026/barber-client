@@ -5,7 +5,7 @@ export default function MainHero() {
       <img
         src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767286874/barber_ey8hyw.jpg"
         className="absolute inset-0 w-full h-full object-cover"
-        alt="Barbershop"
+        alt="Premium barbershop interior at Elite Barber Studio in Ahmedabad"
       />
 
       {/* Dark Overlay */}
@@ -14,7 +14,7 @@ export default function MainHero() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
         <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-          Premium Men's <br /> Grooming Experience
+          Premium Men's Grooming Experience
         </h1>
 
         <p className="text-[#EDE6D9] text-xs sm:text-sm lg:text-base mt-4 max-w-2xl">

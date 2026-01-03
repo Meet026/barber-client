@@ -1,6 +1,34 @@
+import { getReviewSchema } from "../utils/seo.js";
+
 export default function Testimonials() {
+  const reviews = [
+    {
+      author: "Marcus T.",
+      text: "Best fade I've ever had. Clean shop, skilled hands, fair price. Been coming here for two years now and never disappointed.",
+      date: "2023-01-15"
+    },
+    {
+      author: "James K.",
+      text: "These guys know what they're doing. No small talk unless you want it. Just quality work and attention to detail every time.",
+      date: "2023-03-20"
+    },
+    {
+      author: "David R.",
+      text: "Finally found a barber who gets it right every time. Worth every dollar. The atmosphere is relaxed and professional.",
+      date: "2024-06-10"
+    }
+  ];
+
+  const reviewSchema = getReviewSchema(reviews);
+
   return (
-    <section
+    <>
+      {/* Review Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(reviewSchema)
+      }} />
+    
+      <section
       id="testimonials"
       className="bg-[#1B1B1B] text-white py-12 sm:py-20 lg:py-24"
     >
@@ -89,5 +117,6 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
+    </>
   );
 }
