@@ -44,7 +44,7 @@ export default function OurStory() {
             <img
               src="https://res.cloudinary.com/dz3b7notk/image/upload/v1767287386/barber-scissor_ldsm7z.jpg"
               className="w-full h-full object-cover grayscale"
-              alt="Barber craftsmanship"
+              alt="Professional barber tools and craftsmanship at Elite Barber Studio"
             />
           </div>
 
